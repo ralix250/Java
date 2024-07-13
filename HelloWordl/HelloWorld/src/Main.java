@@ -60,6 +60,7 @@ public class Main {
       * Cuando se usa new es para crear nuevas clases
       * add es para agregar información a la lista
       */
+      @SuppressWarnings("rawtypes")
       List myList = new ArrayList();
       myList.add(myString);
       myList.add(myInt);

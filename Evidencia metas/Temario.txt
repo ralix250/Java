@@ -1,0 +1,62 @@
+# Java: Temario de Estudio
+
+## Introducción
+- Conceptos básicos
+- Características del lenguaje Java
+- Instalación del JDK 8
+- Instalación y configuración de IntelliJ
+- Compilar y ejecutar programas en Java
+
+## Fundamentos de Java
+- Método principal (Main)
+- Comentarios
+- Paquetes e importaciones
+- Tipos de datos
+  - Enteros
+  - Tipos con punto decimal
+  - Caracteres
+  - Booleanos
+- Declaración de variables
+- Operadores
+  - Operadores aritméticos
+  - Operadores relacionales
+  - Operador de asignación
+  - El operador `?`
+  - Precedencia de operadores
+- Sentencias de control
+  - Sentencias de selección
+    - `if`, `if else`
+    - `switch`
+  - Sentencias de iteración
+    - `while`, `do while`
+    - `for`, `for each`
+  - Sentencias de salto
+    - `break`
+    - `continue`
+    - `return`
+- Arreglos
+
+## Programación orientada a objetos
+- Clases y objetos
+- Atributos y métodos de clase
+- Encapsulamiento
+- Herencia
+- Polimorfismo
+- Abstracción
+
+## Paquetes y Modificadores de acceso
+- Paquetes
+- Modificadores de acceso: `public`, `protected` y `private`
+- Métodos estáticos
+
+## Manejo de excepciones
+- Causa de las excepciones
+- Manejo de las excepciones
+- Jerarquía de las excepciones
+
+## Colecciones
+- `ArrayList`
+- `LinkedList`
+- `HashSet`
+- `HashMap`
+- Acceso a una colección por medio de `Iterator` y `for each`
