@@ -1,5 +1,4 @@
 
-
 public class Claseif1 {
    public static void main(String[] args) {
       int numero = 200;
@@ -8,8 +7,7 @@ public class Claseif1 {
          System.out.println("El numero escogido es: " + numero);
       } else if(numero > 100){
          System.out.println("El numero " + numero + " Es grandecito");
-      }
-       else {
+      } else {
          System.out.println("El numero " + numero + "no cumple con la condición");
       }
       
