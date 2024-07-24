@@ -1,4 +1,4 @@
-
+package condicionales;
 public class Claseif1 {
    public static void main(String[] args) {
       int numero = 200;
