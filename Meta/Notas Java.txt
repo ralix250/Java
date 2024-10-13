@@ -1,7 +1,50 @@
 Notas Java
 
 James Gosling: Escribelo 1 vez y ejecutalo donde quieras.
-   1. Introducci髇
+   1. Introducci贸n
+      https://www.oracle.com/mx/java/technologies/downloads/
+      Instalar Java, agregar variable de entorno(JAVA_HOME) y variable PATH(ruta donde esta instalado el jdk)
+      https://www.jetbrains.com/idea/
+      Instalar IntelliJ IDEA
+      ### Origen y desarrollo de Java  
+      Java fue desarrollado por **Sun Microsystems** en **1995**, aunque su origen se remonta a **1991**, cuando un equipo de 13 personas liderado por **James Gosling** inici贸 el **Proyecto Verde** (Green Project).
+      Buscaba crear un lenguaje para desarrollar aplicaciones para tarjetas inteligentes y decodificadores de TV. 
+      Inicialmente, usaron el lenguaje **C++**, pero los problemas con punteros y gesti贸n de memoria llevaron a la necesidad de desarrollar un nuevo lenguaje desde cero.
+      El primer nombre del lenguaje fue **Oak** (Roble), en honor al 谩rbol que James Gosling ve铆a desde su ventana. 
+      Sin embargo, por temas de licencias tuvieron que cambiar el nombre a **Java**, inspirado en una cafeter铆a frecuentada por el equipo, ubicada en la isla de Java, Indonesia.  
+      ### Lanzamiento oficial  
+      - **1995**: Primera versi贸n oficial del lenguaje.  
+      - **1996**: Lanzamiento oficial ante la prensa y creaci贸n de un navegador que permit铆a ejecutar peque帽os programas llamados **applets** en p谩ginas web (hoy obsoletos).  
+      - **1998-1999**: Nace **Java Enterprise Edition (JEE)**, enfocado en el desarrollo de aplicaciones empresariales y din谩micas.  
+      ### Filosof铆a y caracter铆sticas principales de Java  
+      La visi贸n de Gosling era desarrollar un lenguaje **multiplataforma**, cuyo lema era: *"Escr铆belo una vez, ejec煤talo en cualquier lugar"*. 
+      Esta independencia se logra gracias a la **M谩quina Virtual de Java (JVM)**, que permite que los binarios compilados (bytecode) puedan ejecutarse en diferentes sistemas operativos (Linux, Windows, macOS).  
+      Cada sistema operativo tiene su propia JVM, lo que hace posible la ejecuci贸n del bytecode sin importar la plataforma.  
+      ## Caracter铆sticas clave de Java  
+      1. **Multiplataforma**: Las aplicaciones se compilan en **bytecode**, un lenguaje intermedio que la JVM convierte en binario para ser interpretado por el hardware.  
+      2. **Orientaci贸n a objetos**: Java sigue los principios de la **Programaci贸n Orientada a Objetos (POO)**, incluyendo:  
+         - **Polimorfismo**: Clases que pueden adoptar m煤ltiples formas mediante la herencia.  
+         - **Encapsulamiento**: Permite ocultar informaci贸n interna de las clases.  
+         - **Herencia**: Reutilizaci贸n de atributos y m茅todos de una clase padre en otras clases.  
+         - **Interfaces**: Especifican un contrato que las clases deben seguir.  
+         - **Sobrecarga y sobrescritura de m茅todos**: Dos formas de implementar m茅todos con el mismo nombre pero diferentes comportamientos.  
+      3. **Recolecci贸n autom谩tica de basura**: Un proceso de bajo nivel que libera memoria eliminando objetos que ya no se usan, evitando fugas de memoria.  
+      4. **Modularidad**: Las aplicaciones grandes se desarrollan a partir de m贸dulos m谩s peque帽os, lo que facilita la escritura, mantenimiento y escalabilidad del c贸digo.  
+      5. **Fuertemente tipado**: Cada variable debe tener un tipo de dato definido, lo que garantiza mayor seguridad y control durante la ejecuci贸n.  
+      6. **Desarrollo para m煤ltiples entornos**:  
+         - Aplicaciones de consola y scripts.  
+         - Aplicaciones de escritorio con **Swing** y **JavaFX**.  
+         - Aplicaciones web din谩micas con **Java Enterprise Edition (JEE)**.  
+         - **APIs REST** para arquitecturas en la nube y microservicios.  
+         - Frameworks populares como **Spring Boot** para desarrollo empresarial.
+      ## Resumen  
+      Java es un lenguaje vers谩til y poderoso que ha evolucionado desde sus or铆genes para ser uno de los m谩s utilizados en la industria. Desde aplicaciones de escritorio hasta sistemas distribuidos y arquitecturas en la nube, Java sigue siendo una opci贸n robusta y relevante para desarrolladores en todo el mundo.  
+
+   Primer Proyecto
+      https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html
+      https://www.jetbrains.com/help/idea/new-project-wizard.html
+      Configuraci贸n inicial y realizar ejercicios.
+
    2. Variables
    3. Tipo String: Cadenas
    4. Operadores
@@ -14,21 +57,21 @@ James Gosling: Escribelo 1 vez y ejecutalo donde quieras.
    11. Linea de comando
    12. Arreglos
    13. Matrices: Arreglos bidimensionales
-   14. Programaci髇 orientada a objetos: Clases y objetos
-   15. Programaci髇 orientada a objetos: Paquetes
-   16. Programaci髇 orientada a objetos: Ejemplo Facturas
-   17. Programaci髇 orientada a objetos: Sobrecarga de m閠odos
-   18. Programaci髇 orientada a objetos: Herencia
-   19. Programaci髇 orientada a objetos: Herencia y clases Abstractas
-   20. Programaci髇 orientada a objetos: Interfaces
-   21. Programaci髇 orientada a objetos: Ejemplo interface Repositorio
-   22. Tipos Gen閞icos (Java Generics)
+   14. Programaci贸n orientada a objetos: Clases y objetos
+   15. Programaci贸n orientada a objetos: Paquetes
+   16. Programaci贸n orientada a objetos: Ejemplo Facturas
+   17. Programaci贸n orientada a objetos: Sobrecarga de m茅todos
+   18. Programaci贸n orientada a objetos: Herencia
+   19. Programaci贸n orientada a objetos: Herencia y clases Abstractas
+   20. Programaci贸n orientada a objetos: Interfaces
+   21. Programaci贸n orientada a objetos: Ejemplo interface Repositorio
+   22. Tipos Gen茅ricos (Java Generics)
    23. Manejo de Excepciones
-   24. Estructura de Datos: API de Colecci髇 de Java
+   24. Estructura de Datos: API de Colecci贸n de Java
    25. Threads: Hilos y Concurrencia
-   26. Java 8 Programaci髇 Funcional: Expresiones Lambda
-   27. Java 8 Programaci髇 Funcional: API Stream
-   28. Java 8 Programaci髇 Funcional: Optional
+   26. Java 8 Programaci贸n Funcional: Expresiones Lambda
+   27. Java 8 Programaci贸n Funcional: API Stream
+   28. Java 8 Programaci贸n Funcional: Optional
    29. Java 8 Date Time
    30. Java Annotations: Uso de Anotaciones
    31. Recursividad
