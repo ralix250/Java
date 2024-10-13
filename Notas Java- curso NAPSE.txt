@@ -1,0 +1,46 @@
+Notas Java
+
+James Gosling: Escribelo 1 vez y ejecutalo donde quieras.
+   1. Introducción
+   2. Variables
+   3. Tipo String: Cadenas
+   4. Operadores
+   5. Flujos de control
+   6. Clases Wrapper
+   7. Valor v/S referencia
+   8. Las clases Date y Calendar
+   9. Clase System
+   10. La Clase Math
+   11. Linea de comando
+   12. Arreglos
+   13. Matrices: Arreglos bidimensionales
+   14. Programación orientada a objetos: Clases y objetos
+   15. Programación orientada a objetos: Paquetes
+   16. Programación orientada a objetos: Ejemplo Facturas
+   17. Programación orientada a objetos: Sobrecarga de métodos
+   18. Programación orientada a objetos: Herencia
+   19. Programación orientada a objetos: Herencia y clases Abstractas
+   20. Programación orientada a objetos: Interfaces
+   21. Programación orientada a objetos: Ejemplo interface Repositorio
+   22. Tipos Genéricos (Java Generics)
+   23. Manejo de Excepciones
+   24. Estructura de Datos: API de Colección de Java
+   25. Threads: Hilos y Concurrencia
+   26. Java 8 Programación Funcional: Expresiones Lambda
+   27. Java 8 Programación Funcional: API Stream
+   28. Java 8 Programación Funcional: Optional
+   29. Java 8 Date Time
+   30. Java Annotations: Uso de Anotaciones
+   31. Recursividad
+   32. Manejo de Archivos
+   34. Bases de datos con JDBC
+   35. Bases de datos con JDBC: Pool de conexiones
+   36. Bases de datos con JDBC: Transacciones
+   37. Unit Testing: JUnit 5
+   38. Unit Testing: Mockito
+
+
+Recursos Alternos:
+   Youtube:
+      https://www.youtube.com/@ProgramandoConElNovato
+      https://youtu.be/2ZXiuh0rg3M?si=lH38v7V0C28GSmuM
