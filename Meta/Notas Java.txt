@@ -46,6 +46,90 @@ James Gosling: Escribelo 1 vez y ejecutalo donde quieras.
       Configuración inicial y realizar ejercicios.
 
    2. Variables
+   ### **1. Introducción a las variables**  
+   Una variable es un espacio en memoria donde se almacena un dato que puede cambiar durante la ejecución del programa. 
+   En Java, todas las variables deben declararse con un tipo específico, lo que garantiza la seguridad del tipo de dato.  
+
+   ### **2. Ejemplos de variables**  
+   - **int**: `int edad = 25;`  
+   - **double**: `double salario = 45678.90;`  
+   - **char**: `char inicial = 'A';`  
+   - **boolean**: `boolean esActivo = true;`  
+
+   ### **3. Reglas para definir una variable**  
+   - Debe comenzar con una letra, `$` o `_`.  
+   - No puede usar palabras reservadas como `int`, `public`.  
+   - Es sensible a mayúsculas y minúsculas (`Edad` es diferente de `edad`).  
+   - No se permiten espacios ni caracteres especiales.
+
+   ### **4. Introducción a los primitivos**  
+   Java tiene 8 tipos de datos primitivos que almacenan valores simples, como números, caracteres o valores booleanos. 
+   No son objetos, por lo que tienen mejor rendimiento.
+
+   ### **5. Primitivos numéricos enteros**  
+   - **byte** (8 bits): Rango: -128 a 127.  
+   - **short** (16 bits): Rango: -32,768 a 32,767.  
+   - **int** (32 bits): Rango: -2³¹ a 2³¹ - 1.  
+   - **long** (64 bits): Rango: -2⁶³ a 2⁶³ - 1.  
+
+   ### **6. Primitivos numéricos de punto flotante**  
+   Se utilizan para almacenar números decimales:  
+   - **float** (32 bits): Precisión simple.  
+   - **double** (64 bits): Precisión doble.  
+
+   ### **7. Primitivos de punto flotante y sus constantes**  
+   - **Float.MAX_VALUE**: Máximo valor de `float`.  
+   - **Double.MAX_VALUE**: Máximo valor de `double`.  
+   - También existen las constantes `NaN` (Not a Number) y `Infinity`.
+
+   ### **8. Primitivo char o carácter**  
+   Almacena un único carácter Unicode.  
+
+   ### **9. Char y caracteres especiales**  
+   Caracteres especiales:
+   - **'\n'**: Nueva línea  
+   - **'\t'**: Tabulación  
+   - **'\\'**: Barra invertida  
+
+   ### **10. Primitivo boolean o lógico binario**  
+   Almacena valores `true` o `false`.  
+
+   ### **11. Sistemas numéricos: decimal, binario, octal y hexadecimal**  
+   - **Decimal**: Base 10 (0-9)  
+   - **Binario**: Base 2 (0,1)  
+   - **Octal**: Base 8 (0-7)  
+   - **Hexadecimal**: Base 16 (0-9, A-F)  
+
+   ### **12. Sistemas numéricos y entradas desde ventana de diálogo**  
+   **Ejemplo:**  
+   import javax.swing.JOptionPane;
+
+   String input = JOptionPane.showInputDialog("Ingresa un número:");
+   int numero = Integer.parseInt(input);
+
+   ### **13. Sistemas numéricos y entradas desde terminal**  
+   **Ejemplo:**  
+   import java.util.Scanner;
+
+   Scanner scanner = new Scanner(System.in);
+   System.out.print("Ingresa un número: ");
+   int numero = scanner.nextInt();
+
+   ### **14. Conversión de cadenas a primitivos**  
+   Se usa la clase `Wrapper` para convertir:  
+   - `Integer.parseInt()` para convertir a `int`.  
+   - `Double.parseDouble()` para convertir a `double`.  
+
+   ### **15. Conversiones entre tipos primitivos**  
+   Java permite conversiones entre tipos primitivos de dos maneras:  
+
+   - **Conversión implícita** (automática):  
+   int num = 10;
+   double resultado = num;  // int se convierte en double
+   - **Conversión explícita** (casting):  
+   double valor = 9.7;
+   int entero = (int) valor;  // Se pierde la parte decimal
+
    3. Tipo String: Cadenas
    4. Operadores
    5. Flujos de control

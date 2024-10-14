@@ -16,5 +16,14 @@ public class Main {
         System.out.println("numero2 = " + numero2);
 
         var numero3= "15";
+
+        String nombre = "Rafael";
+        if (numero > 11){
+            nombre = "Yusei";
+        }
+        System.out.println("nombre = " + nombre);
+        // Se recomienda no usar acentos y letras ñ por la codificación unicode
+        // Comentarios de una sola linea
+        /*Comentarios de N bloques de lineas */
     }
 }
