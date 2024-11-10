@@ -1,6 +1,7 @@
 public class ConversionDeTipos {
 
     public static void main(String[] args) {
+        // *****  Conversión de string a tipos primitivos  ***** //
         //Conversión de String a Integer
         String numeroStr = "50";
         int numeroInt = Integer.parseInt(numeroStr);
@@ -55,5 +56,26 @@ public class ConversionDeTipos {
         varLogicoBoolean2 = Boolean.parseBoolean(varLogicoStr2);
         System.out.println("varLogicoBoolean1: " + varLogicoBoolean1);
         System.out.println("varLogicoBoolean2: " + varLogicoBoolean2);
+
+        // *****  Conversión de tipos primitivos a string  ***** //
+        int otroNumeroInt = 100;
+        System.out.println("otroNumeroInt["+otroNumeroInt+"]");
+        String otroNumeroStr = Integer.toString(otroNumeroInt+10);
+        System.out.println(otroNumeroStr);
+        otroNumeroStr = String.valueOf(otroNumeroInt+20);
+        System.out.println(otroNumeroStr);
+        otroNumeroStr = String.valueOf(otroNumeroStr+20);
+        System.out.println(otroNumeroStr);
+
+        double otroRealDouble = 1.23456;
+        String otroRealStr = Double.toString(otroRealDouble);
+        System.out.println(otroRealStr);
+        double otroRealDouble1 = 1.23456e2;
+        String otroRealStr1 = Double.toString(otroRealDouble1);
+        System.out.println(otroRealStr1);
+        otroRealStr1 = String.valueOf(1.23456e2f);
+        System.out.println(otroRealStr1);
+        otroRealStr1 = String.valueOf(1.23456);
+        System.out.println(otroRealStr1);
     }
 }
