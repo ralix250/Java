@@ -77,5 +77,22 @@ public class ConversionDeTipos {
         System.out.println(otroRealStr1);
         otroRealStr1 = String.valueOf(1.23456);
         System.out.println(otroRealStr1);
+
+        //Conversion entre tipos primitivos
+        int i = 33000;
+        /*casting forza que un valor más grande entre a una variable con longitud menor
+         * Solo se puede hacer a primitivos numericos
+        */
+        // Puede perderse información
+        short s = (short)i;
+        long l = i;
+        System.out.println("i["+i+"], s["+s+"], l["+l+"]");
+        System.out.println(Short.MAX_VALUE);
+        //boolean no soporta enteros
+        //boolean b = (boolean)i;
+        char b = (char)i;
+        System.out.println("b["+b+"]");
+        float f = (float)i;
+        System.out.println("f["+f+"]");
     }
 }
