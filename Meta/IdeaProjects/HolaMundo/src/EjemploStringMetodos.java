@@ -22,7 +22,19 @@ public class EjemploStringMetodos {
       System.out.println("nombre.substring(1)["+nombre.substring(1)+"]");
       System.out.println("nombre.substring(1, 4)["+nombre.substring(1, 4)+"]");
       System.out.println("nombre.substring(1, 12)["+nombre.substring(1, 12)+"]");
-      //System.out.println("nombre.["+nombre.+"]");
-      //System.out.println("nombre.["+nombre.+"]");
+
+      String trabalenguas = "trabalenguas";
+      System.out.println("trabalenguas["+trabalenguas+"]");
+      System.out.println("trabalenguas.replace["+trabalenguas.replace("a", ".")+"]");
+      System.out.println("trabalenguas.indexOf["+trabalenguas.indexOf("a")+"]");
+      //Si es mayor o igual a 0 se encontro caracter
+      System.out.println("trabalenguas.indexOf('z')["+trabalenguas.indexOf('z')+"]");
+      System.out.println("trabalenguas.lastIndexOf('a')["+trabalenguas.lastIndexOf('a')+"]");
+      System.out.println("trabalenguas.contains(trabalenguas)["+trabalenguas.contains("lenguas")+"]");
+      System.out.println("trabalenguas.statsWhith(\"lenguas\")["+trabalenguas.startsWith("lenguas")+"]");
+      System.out.println("trabalenguas.startsWith(\"traba\")["+trabalenguas.startsWith("traba")+"]");
+      System.out.println("trabalenguas.endsWith(\"traba\")["+trabalenguas.endsWith("traba")+"]");
+      System.out.println("  trabalenguas  ");
+      System.out.println("  trabalenguas  ".trim());
    }
 }
