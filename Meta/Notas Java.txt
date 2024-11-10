@@ -46,91 +46,210 @@ James Gosling: Escribelo 1 vez y ejecutalo donde quieras.
       Configuración inicial y realizar ejercicios.
 
    2. Variables
-   ### **1. Introducción a las variables**  
-   Una variable es un espacio en memoria donde se almacena un dato que puede cambiar durante la ejecución del programa. 
-   En Java, todas las variables deben declararse con un tipo específico, lo que garantiza la seguridad del tipo de dato.  
+      ### **1. Introducción a las variables**  
+      Una variable es un espacio en memoria donde se almacena un dato que puede cambiar durante la ejecución del programa. 
+      En Java, todas las variables deben declararse con un tipo específico, lo que garantiza la seguridad del tipo de dato.  
 
-   ### **2. Ejemplos de variables**  
-   - **int**: `int edad = 25;`  
-   - **double**: `double salario = 45678.90;`  
-   - **char**: `char inicial = 'A';`  
-   - **boolean**: `boolean esActivo = true;`  
+      ### **2. Ejemplos de variables**  
+      - **int**: `int edad = 25;`  
+      - **double**: `double salario = 45678.90;`  
+      - **char**: `char inicial = 'A';`  
+      - **boolean**: `boolean esActivo = true;`  
 
-   ### **3. Reglas para definir una variable**  
-   - Debe comenzar con una letra, `$` o `_`.  
-   - No puede usar palabras reservadas como `int`, `public`.  
-   - Es sensible a mayúsculas y minúsculas (`Edad` es diferente de `edad`).  
-   - No se permiten espacios ni caracteres especiales.
+      ### **3. Reglas para definir una variable**  
+      - Debe comenzar con una letra, `$` o `_`.  
+      - No puede usar palabras reservadas como `int`, `public`.  
+      - Es sensible a mayúsculas y minúsculas (`Edad` es diferente de `edad`).  
+      - No se permiten espacios ni caracteres especiales.
 
-   ### **4. Introducción a los primitivos**  
-   Java tiene 8 tipos de datos primitivos que almacenan valores simples, como números, caracteres o valores booleanos. 
-   No son objetos, por lo que tienen mejor rendimiento.
+      ### **4. Introducción a los primitivos**  
+      Java tiene 8 tipos de datos primitivos que almacenan valores simples, como números, caracteres o valores booleanos. 
+      No son objetos, por lo que tienen mejor rendimiento.
 
-   ### **5. Primitivos numéricos enteros**  
-   - **byte** (8 bits): Rango: -128 a 127.  
-   - **short** (16 bits): Rango: -32,768 a 32,767.  
-   - **int** (32 bits): Rango: -2³¹ a 2³¹ - 1.  
-   - **long** (64 bits): Rango: -2⁶³ a 2⁶³ - 1.  
+      ### **5. Primitivos numéricos enteros**  
+      - **byte** (8 bits): Rango: -128 a 127.  
+      - **short** (16 bits): Rango: -32,768 a 32,767.  
+      - **int** (32 bits): Rango: -2³¹ a 2³¹ - 1.  
+      - **long** (64 bits): Rango: -2⁶³ a 2⁶³ - 1.  
 
-   ### **6. Primitivos numéricos de punto flotante**  
-   Se utilizan para almacenar números decimales:  
-   - **float** (32 bits): Precisión simple.  
-   - **double** (64 bits): Precisión doble.  
+      ### **6. Primitivos numéricos de punto flotante**  
+      Se utilizan para almacenar números decimales:  
+      - **float** (32 bits): Precisión simple.  
+      - **double** (64 bits): Precisión doble.  
 
-   ### **7. Primitivos de punto flotante y sus constantes**  
-   - **Float.MAX_VALUE**: Máximo valor de `float`.  
-   - **Double.MAX_VALUE**: Máximo valor de `double`.  
-   - También existen las constantes `NaN` (Not a Number) y `Infinity`.
+      ### **7. Primitivos de punto flotante y sus constantes**  
+      - **Float.MAX_VALUE**: Máximo valor de `float`.  
+      - **Double.MAX_VALUE**: Máximo valor de `double`.  
+      - También existen las constantes `NaN` (Not a Number) y `Infinity`.
 
-   ### **8. Primitivo char o carácter**  
-   Almacena un único carácter Unicode.  
+      ### **8. Primitivo char o carácter**  
+      Almacena un único carácter Unicode.  
 
-   ### **9. Char y caracteres especiales**  
-   Caracteres especiales:
-   - **'\n'**: Nueva línea  
-   - **'\t'**: Tabulación  
-   - **'\\'**: Barra invertida  
+      ### **9. Char y caracteres especiales**  
+      Caracteres especiales:
+      - **'\n'**: Nueva línea  
+      - **'\t'**: Tabulación  
+      - **'\\'**: Barra invertida  
 
-   ### **10. Primitivo boolean o lógico binario**  
-   Almacena valores `true` o `false`.  
+      ### **10. Primitivo boolean o lógico binario**  
+      Almacena valores `true` o `false`.  
 
-   ### **11. Sistemas numéricos: decimal, binario, octal y hexadecimal**  
-   - **Decimal**: Base 10 (0-9)  
-   - **Binario**: Base 2 (0,1)  
-   - **Octal**: Base 8 (0-7)  
-   - **Hexadecimal**: Base 16 (0-9, A-F)  
+      ### **11. Sistemas numéricos: decimal, binario, octal y hexadecimal**  
+      - **Decimal**: Base 10 (0-9)  
+      - **Binario**: Base 2 (0,1)  
+      - **Octal**: Base 8 (0-7)  
+      - **Hexadecimal**: Base 16 (0-9, A-F)  
 
-   ### **12. Sistemas numéricos y entradas desde ventana de diálogo**  
-   **Ejemplo:**  
-   import javax.swing.JOptionPane;
+      ### **12. Sistemas numéricos y entradas desde ventana de diálogo**  
+      **Ejemplo:**  
+      import javax.swing.JOptionPane;
 
-   String input = JOptionPane.showInputDialog("Ingresa un número:");
-   int numero = Integer.parseInt(input);
+      String input = JOptionPane.showInputDialog("Ingresa un número:");
+      int numero = Integer.parseInt(input);
 
-   ### **13. Sistemas numéricos y entradas desde terminal**  
-   **Ejemplo:**  
-   import java.util.Scanner;
+      ### **13. Sistemas numéricos y entradas desde terminal**  
+      **Ejemplo:**  
+      import java.util.Scanner;
 
-   Scanner scanner = new Scanner(System.in);
-   System.out.print("Ingresa un número: ");
-   int numero = scanner.nextInt();
+      Scanner scanner = new Scanner(System.in);
+      System.out.print("Ingresa un número: ");
+      int numero = scanner.nextInt();
 
-   ### **14. Conversión de cadenas a primitivos**  
-   Se usa la clase `Wrapper` para convertir:  
-   - `Integer.parseInt()` para convertir a `int`.  
-   - `Double.parseDouble()` para convertir a `double`.  
+      ### **14. Conversión de cadenas a primitivos**  
+      Se usa la clase `Wrapper` para convertir:  
+      - `Integer.parseInt()` para convertir a `int`.  
+      - `Double.parseDouble()` para convertir a `double`.  
 
-   ### **15. Conversiones entre tipos primitivos**  
-   Java permite conversiones entre tipos primitivos de dos maneras:  
+      ### **15. Conversiones entre tipos primitivos**  
+      Java permite conversiones entre tipos primitivos de dos maneras:  
 
-   - **Conversión implícita** (automática):  
-   int num = 10;
-   double resultado = num;  // int se convierte en double
-   - **Conversión explícita** (casting):  
-   double valor = 9.7;
-   int entero = (int) valor;  // Se pierde la parte decimal
+      - **Conversión implícita** (automática):  
+      int num = 10;
+      double resultado = num;  // int se convierte en double
+      - **Conversión explícita** (casting):  
+      double valor = 9.7;
+      int entero = (int) valor;  // Se pierde la parte decimal
 
    3. Tipo String: Cadenas
+      ### **Clase `String` en Java**
+      La clase `String` en Java representa una secuencia de caracteres y es inmutable, lo que significa que una vez creada, no puede cambiar. Cualquier operación que modifique una cadena genera un nuevo `String` en memoria.
+
+      #### **Creación de un `String`**
+      Hay dos formas principales de crear un `String` en Java:
+      1. **Literal**: `"cadena"` — Java almacena las cadenas literales en un "pool de strings" para optimizar la memoria.
+         String nombre = "Andrés";
+
+      2. **Usando el operador `new`**: se crea un nuevo objeto `String`, no almacenado en el pool.
+         String nombre = new String("Andrés");
+      Aunque ambas formas son válidas, se recomienda la primera por su simplicidad y eficiencia.
+
+      #### **Características principales de `String`**
+      - **Inmutabilidad**: Al ser inmutables, cualquier operación sobre un `String` (como cambiar su contenido) genera un nuevo objeto `String`.
+      - **Secuencia de caracteres**: `String` es una secuencia de caracteres Unicode, lo que permite representar textos en múltiples lenguajes.
+      - **No es un tipo primitivo**: Aunque se usa de forma similar a los tipos primitivos, `String` es un objeto.
+
+      #### **Escapar caracteres**
+      Para incluir comillas o caracteres especiales dentro de un `String`, se usa el carácter de escape `\`.
+         String texto = "Ella dijo, \"Hola\"";
+
+      ### **Métodos principales de la clase `String`**
+         #### 1. **Comparación de cadenas**
+         - **equals()**: Compara el contenido de dos `String` y retorna `true` si son iguales.
+           String s1 = "hola";
+           String s2 = new String("hola");
+           boolean iguales = s1.equals(s2); // true
+         - **equalsIgnoreCase()**: Similar a `equals()`, pero ignora las mayúsculas y minúsculas.
+           boolean iguales = s1.equalsIgnoreCase(s2); // true
+         - **compareTo()**: Compara lexicográficamente dos cadenas. Devuelve un valor:
+           - Negativo si el primero es menor.
+           - Cero si son iguales.
+           - Positivo si el primero es mayor.
+           int resultado = s1.compareTo(s2);
+
+         #### 2. **Manipulación de contenido**
+            - **concat()**: Une dos `String`.
+               String completo = s1.concat(s2);
+            - También se puede usar el operador `+` para concatenar.
+  
+            - **substring(int beginIndex, int endIndex)**: Extrae una subcadena desde `beginIndex` hasta `endIndex` (exclusivo).
+               String subcadena = s1.substring(1, 3); // "ol"
+
+            - **replace()**: Reemplaza caracteres o cadenas dentro del `String`.
+               String nuevaCadena = s1.replace('h', 'j'); // "jola"
+
+         #### 3. **Buscar contenido**
+         - **indexOf()**: Encuentra la primera aparición de un carácter o `String`. Retorna `-1` si no encuentra el valor.
+            int posicion = s1.indexOf("a"); // 1
+         - **lastIndexOf()**: Encuentra la última aparición de un carácter o `String`.
+            int ultimaPosicion = s1.lastIndexOf("a"); 
+
+         #### 4. **Métodos para verificar contenido**
+         - **startsWith()** y **endsWith()**: Verifican si un `String` comienza o termina con cierto prefijo o sufijo.
+           boolean empiezaCon = s1.startsWith("ho"); // true
+           boolean terminaCon = s1.endsWith("la");   // true
+
+         #### 5. **Otras operaciones útiles**
+         - **length()**: Devuelve el número de caracteres en el `String`.
+            int longitud = s1.length();
+         - **isEmpty()**: Retorna `true` si el `String` está vacío (`length() == 0`).
+            boolean vacio = s1.isEmpty();
+         - **trim()**: Elimina los espacios al inicio y al final de la cadena.
+            String sinEspacios = s1.trim();
+         - **charAt(int index)**: Obtiene el carácter en una posición específica.
+            char c = s1.charAt(1); // 'o'
+
+         #### 6. **Convertir `String` a otros tipos**
+         - **toCharArray()**: Convierte el `String` en un arreglo de caracteres.
+            char[] caracteres = s1.toCharArray();
+         - **split(String regex)**: Divide el `String` en un arreglo de subcadenas según el patrón de regex.
+            String[] partes = s1.split(" ");
+
+         #### 7. **Conversiones de mayúsculas y minúsculas**
+         - **toUpperCase()**: Convierte todos los caracteres a mayúsculas.
+            String enMayusculas = s1.toUpperCase();
+         - **toLowerCase()**: Convierte todos los caracteres a minúsculas.
+            String enMinusculas = s1.toLowerCase();
+
+      ### **Ejemplo completo usando los métodos principales**
+         public class EjemploString {
+            public static void main(String[] args) {
+               // Crear strings
+               String saludo = "Hola";
+               String nombre = "Andrés";
+               String completo = saludo + " " + nombre;
+
+               // Comparación
+               boolean esIgual = saludo.equals("hola"); // false
+               boolean esIgualIgnoreCase = saludo.equalsIgnoreCase("hola"); // true
+
+               // Longitud y caracter en posición
+               int longitud = completo.length();
+               char primerCaracter = completo.charAt(0); // 'H'
+
+               // Substring y reemplazo
+               String subcadena = completo.substring(5); // "Andrés"
+               String reemplazo = completo.replace("Hola", "Bienvenido"); // "Bienvenido Andrés"
+
+               // Transformaciones
+               String enMayusculas = completo.toUpperCase(); // "HOLA ANDRÉS"
+               String enMinusculas = completo.toLowerCase(); // "hola andrés"
+               String sinEspacios = "   espacio   ".trim(); // "espacio"
+
+               // Dividir y concatenar
+               String[] partes = completo.split(" ");
+               String nombreCompleto = partes[0].concat(" " + partes[1]);
+
+               // Imprimir resultados
+               System.out.println("Original: " + completo);
+               System.out.println("Es igual (ignore case): " + esIgualIgnoreCase);
+               System.out.println("Longitud: " + longitud);
+               System.out.println("Reemplazo: " + reemplazo);
+               System.out.println("Subcadena: " + subcadena);
+               System.out.println("Mayúsculas: " + enMayusculas);
+               System.out.println("Sin espacios: " + sinEspacios);
+            }
+         }
+
    4. Operadores
    5. Flujos de control
    6. Clases Wrapper
