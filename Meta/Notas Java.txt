@@ -6,39 +6,39 @@ James Gosling: Escribelo 1 vez y ejecutalo donde quieras.
       Instalar Java, agregar variable de entorno(JAVA_HOME) y variable PATH(ruta donde esta instalado el jdk)
       https://www.jetbrains.com/idea/
       Instalar IntelliJ IDEA
-      ### Origen y desarrollo de Java  
+      ### Origen y desarrollo de Java
       Java fue desarrollado por **Sun Microsystems** en **1995**, aunque su origen se remonta a **1991**, cuando un equipo de 13 personas liderado por **James Gosling** inició el **Proyecto Verde** (Green Project).
-      Buscaba crear un lenguaje para desarrollar aplicaciones para tarjetas inteligentes y decodificadores de TV. 
+      Buscaba crear un lenguaje para desarrollar aplicaciones para tarjetas inteligentes y decodificadores de TV.
       Inicialmente, usaron el lenguaje **C++**, pero los problemas con punteros y gestión de memoria llevaron a la necesidad de desarrollar un nuevo lenguaje desde cero.
-      El primer nombre del lenguaje fue **Oak** (Roble), en honor al árbol que James Gosling veía desde su ventana. 
-      Sin embargo, por temas de licencias tuvieron que cambiar el nombre a **Java**, inspirado en una cafetería frecuentada por el equipo, ubicada en la isla de Java, Indonesia.  
-      ### Lanzamiento oficial  
-      - **1995**: Primera versión oficial del lenguaje.  
-      - **1996**: Lanzamiento oficial ante la prensa y creación de un navegador que permitía ejecutar pequeños programas llamados **applets** en páginas web (hoy obsoletos).  
-      - **1998-1999**: Nace **Java Enterprise Edition (JEE)**, enfocado en el desarrollo de aplicaciones empresariales y dinámicas.  
-      ### Filosofía y características principales de Java  
-      La visión de Gosling era desarrollar un lenguaje **multiplataforma**, cuyo lema era: *"Escríbelo una vez, ejecútalo en cualquier lugar"*. 
-      Esta independencia se logra gracias a la **Máquina Virtual de Java (JVM)**, que permite que los binarios compilados (bytecode) puedan ejecutarse en diferentes sistemas operativos (Linux, Windows, macOS).  
-      Cada sistema operativo tiene su propia JVM, lo que hace posible la ejecución del bytecode sin importar la plataforma.  
-      ## Características clave de Java  
-      1. **Multiplataforma**: Las aplicaciones se compilan en **bytecode**, un lenguaje intermedio que la JVM convierte en binario para ser interpretado por el hardware.  
-      2. **Orientación a objetos**: Java sigue los principios de la **Programación Orientada a Objetos (POO)**, incluyendo:  
-         - **Polimorfismo**: Clases que pueden adoptar múltiples formas mediante la herencia.  
-         - **Encapsulamiento**: Permite ocultar información interna de las clases.  
-         - **Herencia**: Reutilización de atributos y métodos de una clase padre en otras clases.  
-         - **Interfaces**: Especifican un contrato que las clases deben seguir.  
-         - **Sobrecarga y sobrescritura de métodos**: Dos formas de implementar métodos con el mismo nombre pero diferentes comportamientos.  
-      3. **Recolección automática de basura**: Un proceso de bajo nivel que libera memoria eliminando objetos que ya no se usan, evitando fugas de memoria.  
-      4. **Modularidad**: Las aplicaciones grandes se desarrollan a partir de módulos más pequeños, lo que facilita la escritura, mantenimiento y escalabilidad del código.  
-      5. **Fuertemente tipado**: Cada variable debe tener un tipo de dato definido, lo que garantiza mayor seguridad y control durante la ejecución.  
-      6. **Desarrollo para múltiples entornos**:  
-         - Aplicaciones de consola y scripts.  
-         - Aplicaciones de escritorio con **Swing** y **JavaFX**.  
-         - Aplicaciones web dinámicas con **Java Enterprise Edition (JEE)**.  
-         - **APIs REST** para arquitecturas en la nube y microservicios.  
+      El primer nombre del lenguaje fue **Oak** (Roble), en honor al árbol que James Gosling veía desde su ventana.
+      Sin embargo, por temas de licencias tuvieron que cambiar el nombre a **Java**, inspirado en una cafetería frecuentada por el equipo, ubicada en la isla de Java, Indonesia.
+      ### Lanzamiento oficial
+      - **1995**: Primera versión oficial del lenguaje.
+      - **1996**: Lanzamiento oficial ante la prensa y creación de un navegador que permitía ejecutar pequeños programas llamados **applets** en páginas web (hoy obsoletos).
+      - **1998-1999**: Nace **Java Enterprise Edition (JEE)**, enfocado en el desarrollo de aplicaciones empresariales y dinámicas.
+      ### Filosofía y características principales de Java
+      La visión de Gosling era desarrollar un lenguaje **multiplataforma**, cuyo lema era: *"Escríbelo una vez, ejecútalo en cualquier lugar"*.
+      Esta independencia se logra gracias a la **Máquina Virtual de Java (JVM)**, que permite que los binarios compilados (bytecode) puedan ejecutarse en diferentes sistemas operativos (Linux, Windows, macOS).
+      Cada sistema operativo tiene su propia JVM, lo que hace posible la ejecución del bytecode sin importar la plataforma.
+      ## Características clave de Java
+      1. **Multiplataforma**: Las aplicaciones se compilan en **bytecode**, un lenguaje intermedio que la JVM convierte en binario para ser interpretado por el hardware.
+      2. **Orientación a objetos**: Java sigue los principios de la **Programación Orientada a Objetos (POO)**, incluyendo:
+         - **Polimorfismo**: Clases que pueden adoptar múltiples formas mediante la herencia.
+         - **Encapsulamiento**: Permite ocultar información interna de las clases.
+         - **Herencia**: Reutilización de atributos y métodos de una clase padre en otras clases.
+         - **Interfaces**: Especifican un contrato que las clases deben seguir.
+         - **Sobrecarga y sobrescritura de métodos**: Dos formas de implementar métodos con el mismo nombre pero diferentes comportamientos.
+      3. **Recolección automática de basura**: Un proceso de bajo nivel que libera memoria eliminando objetos que ya no se usan, evitando fugas de memoria.
+      4. **Modularidad**: Las aplicaciones grandes se desarrollan a partir de módulos más pequeños, lo que facilita la escritura, mantenimiento y escalabilidad del código.
+      5. **Fuertemente tipado**: Cada variable debe tener un tipo de dato definido, lo que garantiza mayor seguridad y control durante la ejecución.
+      6. **Desarrollo para múltiples entornos**:
+         - Aplicaciones de consola y scripts.
+         - Aplicaciones de escritorio con **Swing** y **JavaFX**.
+         - Aplicaciones web dinámicas con **Java Enterprise Edition (JEE)**.
+         - **APIs REST** para arquitecturas en la nube y microservicios.
          - Frameworks populares como **Spring Boot** para desarrollo empresarial.
-      ## Resumen  
-      Java es un lenguaje versátil y poderoso que ha evolucionado desde sus orígenes para ser uno de los más utilizados en la industria. Desde aplicaciones de escritorio hasta sistemas distribuidos y arquitecturas en la nube, Java sigue siendo una opción robusta y relevante para desarrolladores en todo el mundo.  
+      ## Resumen
+      Java es un lenguaje versátil y poderoso que ha evolucionado desde sus orígenes para ser uno de los más utilizados en la industria. Desde aplicaciones de escritorio hasta sistemas distribuidos y arquitecturas en la nube, Java sigue siendo una opción robusta y relevante para desarrolladores en todo el mundo.
 
    Primer Proyecto
       https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html
@@ -46,87 +46,87 @@ James Gosling: Escribelo 1 vez y ejecutalo donde quieras.
       Configuración inicial y realizar ejercicios.
 
    2. Variables
-      ### **1. Introducción a las variables**  
-      Una variable es un espacio en memoria donde se almacena un dato que puede cambiar durante la ejecución del programa. 
-      En Java, todas las variables deben declararse con un tipo específico, lo que garantiza la seguridad del tipo de dato.  
+      ### **1. Introducción a las variables**
+      Una variable es un espacio en memoria donde se almacena un dato que puede cambiar durante la ejecución del programa.
+      En Java, todas las variables deben declararse con un tipo específico, lo que garantiza la seguridad del tipo de dato.
 
-      ### **2. Ejemplos de variables**  
-      - **int**: `int edad = 25;`  
-      - **double**: `double salario = 45678.90;`  
-      - **char**: `char inicial = 'A';`  
-      - **boolean**: `boolean esActivo = true;`  
+      ### **2. Ejemplos de variables**
+      - **int**: `int edad = 25;`
+      - **double**: `double salario = 45678.90;`
+      - **char**: `char inicial = 'A';`
+      - **boolean**: `boolean esActivo = true;`
 
-      ### **3. Reglas para definir una variable**  
-      - Debe comenzar con una letra, `$` o `_`.  
-      - No puede usar palabras reservadas como `int`, `public`.  
-      - Es sensible a mayúsculas y minúsculas (`Edad` es diferente de `edad`).  
+      ### **3. Reglas para definir una variable**
+      - Debe comenzar con una letra, `$` o `_`.
+      - No puede usar palabras reservadas como `int`, `public`.
+      - Es sensible a mayúsculas y minúsculas (`Edad` es diferente de `edad`).
       - No se permiten espacios ni caracteres especiales.
 
-      ### **4. Introducción a los primitivos**  
-      Java tiene 8 tipos de datos primitivos que almacenan valores simples, como números, caracteres o valores booleanos. 
+      ### **4. Introducción a los primitivos**
+      Java tiene 8 tipos de datos primitivos que almacenan valores simples, como números, caracteres o valores booleanos.
       No son objetos, por lo que tienen mejor rendimiento.
 
-      ### **5. Primitivos numéricos enteros**  
-      - **byte** (8 bits): Rango: -128 a 127.  
-      - **short** (16 bits): Rango: -32,768 a 32,767.  
-      - **int** (32 bits): Rango: -2³¹ a 2³¹ - 1.  
-      - **long** (64 bits): Rango: -2⁶³ a 2⁶³ - 1.  
+      ### **5. Primitivos numéricos enteros**
+      - **byte** (8 bits): Rango: -128 a 127.
+      - **short** (16 bits): Rango: -32,768 a 32,767.
+      - **int** (32 bits): Rango: -2³¹ a 2³¹ - 1.
+      - **long** (64 bits): Rango: -2⁶³ a 2⁶³ - 1.
 
-      ### **6. Primitivos numéricos de punto flotante**  
-      Se utilizan para almacenar números decimales:  
-      - **float** (32 bits): Precisión simple.  
-      - **double** (64 bits): Precisión doble.  
+      ### **6. Primitivos numéricos de punto flotante**
+      Se utilizan para almacenar números decimales:
+      - **float** (32 bits): Precisión simple.
+      - **double** (64 bits): Precisión doble.
 
-      ### **7. Primitivos de punto flotante y sus constantes**  
-      - **Float.MAX_VALUE**: Máximo valor de `float`.  
-      - **Double.MAX_VALUE**: Máximo valor de `double`.  
+      ### **7. Primitivos de punto flotante y sus constantes**
+      - **Float.MAX_VALUE**: Máximo valor de `float`.
+      - **Double.MAX_VALUE**: Máximo valor de `double`.
       - También existen las constantes `NaN` (Not a Number) y `Infinity`.
 
-      ### **8. Primitivo char o carácter**  
-      Almacena un único carácter Unicode.  
+      ### **8. Primitivo char o carácter**
+      Almacena un único carácter Unicode.
 
-      ### **9. Char y caracteres especiales**  
+      ### **9. Char y caracteres especiales**
       Caracteres especiales:
-      - **'\n'**: Nueva línea  
-      - **'\t'**: Tabulación  
-      - **'\\'**: Barra invertida  
+      - **'\n'**: Nueva línea
+      - **'\t'**: Tabulación
+      - **'\\'**: Barra invertida
 
-      ### **10. Primitivo boolean o lógico binario**  
-      Almacena valores `true` o `false`.  
+      ### **10. Primitivo boolean o lógico binario**
+      Almacena valores `true` o `false`.
 
-      ### **11. Sistemas numéricos: decimal, binario, octal y hexadecimal**  
-      - **Decimal**: Base 10 (0-9)  
-      - **Binario**: Base 2 (0,1)  
-      - **Octal**: Base 8 (0-7)  
-      - **Hexadecimal**: Base 16 (0-9, A-F)  
+      ### **11. Sistemas numéricos: decimal, binario, octal y hexadecimal**
+      - **Decimal**: Base 10 (0-9)
+      - **Binario**: Base 2 (0,1)
+      - **Octal**: Base 8 (0-7)
+      - **Hexadecimal**: Base 16 (0-9, A-F)
 
-      ### **12. Sistemas numéricos y entradas desde ventana de diálogo**  
-      **Ejemplo:**  
+      ### **12. Sistemas numéricos y entradas desde ventana de diálogo**
+      **Ejemplo:**
       import javax.swing.JOptionPane;
 
       String input = JOptionPane.showInputDialog("Ingresa un número:");
       int numero = Integer.parseInt(input);
 
-      ### **13. Sistemas numéricos y entradas desde terminal**  
-      **Ejemplo:**  
+      ### **13. Sistemas numéricos y entradas desde terminal**
+      **Ejemplo:**
       import java.util.Scanner;
 
       Scanner scanner = new Scanner(System.in);
       System.out.print("Ingresa un número: ");
       int numero = scanner.nextInt();
 
-      ### **14. Conversión de cadenas a primitivos**  
-      Se usa la clase `Wrapper` para convertir:  
-      - `Integer.parseInt()` para convertir a `int`.  
-      - `Double.parseDouble()` para convertir a `double`.  
+      ### **14. Conversión de cadenas a primitivos**
+      Se usa la clase `Wrapper` para convertir:
+      - `Integer.parseInt()` para convertir a `int`.
+      - `Double.parseDouble()` para convertir a `double`.
 
-      ### **15. Conversiones entre tipos primitivos**  
-      Java permite conversiones entre tipos primitivos de dos maneras:  
+      ### **15. Conversiones entre tipos primitivos**
+      Java permite conversiones entre tipos primitivos de dos maneras:
 
-      - **Conversión implícita** (automática):  
+      - **Conversión implícita** (automática):
       int num = 10;
       double resultado = num;  // int se convierte en double
-      - **Conversión explícita** (casting):  
+      - **Conversión explícita** (casting):
       double valor = 9.7;
       int entero = (int) valor;  // Se pierde la parte decimal
 
@@ -170,7 +170,7 @@ James Gosling: Escribelo 1 vez y ejecutalo donde quieras.
             - **concat()**: Une dos `String`.
                String completo = s1.concat(s2);
             - También se puede usar el operador `+` para concatenar.
-  
+
             - **substring(int beginIndex, int endIndex)**: Extrae una subcadena desde `beginIndex` hasta `endIndex` (exclusivo).
                String subcadena = s1.substring(1, 3); // "ol"
 
@@ -181,7 +181,7 @@ James Gosling: Escribelo 1 vez y ejecutalo donde quieras.
          - **indexOf()**: Encuentra la primera aparición de un carácter o `String`. Retorna `-1` si no encuentra el valor.
             int posicion = s1.indexOf("a"); // 1
          - **lastIndexOf()**: Encuentra la última aparición de un carácter o `String`.
-            int ultimaPosicion = s1.lastIndexOf("a"); 
+            int ultimaPosicion = s1.lastIndexOf("a");
 
          #### 4. **Métodos para verificar contenido**
          - **startsWith()** y **endsWith()**: Verifican si un `String` comienza o termina con cierto prefijo o sufijo.
@@ -251,6 +251,82 @@ James Gosling: Escribelo 1 vez y ejecutalo donde quieras.
          }
 
    4. Operadores
+   ## Operadores en Java
+   Los operadores en Java se utilizan para realizar cálculos matemáticos, evaluar condiciones y manipular datos de manera eficiente. Aquí explicaremos los tipos de operadores principales y su uso.
+
+   ### 1. Operadores Aritméticos
+   Estos operadores permiten realizar operaciones matemáticas con tipos de datos numéricos primitivos (`int`, `double`, etc.) y con sus clases envolventes, como `Integer`.
+   Los operadores más comunes son:
+      - **Suma (+)**: Realiza la adición de valores.
+      - **Resta (-)**: Resta un valor de otro.
+      - **Multiplicación (*)**: Multiplica valores.
+      - **División (/)**: Divide el primer valor entre el segundo.
+      - **Módulo (%)**: Devuelve el resto de la división entera.
+   También tenemos los operadores de **incremento** (`++`) y **decremento** (`--`), que aumentan o disminuyen el valor de una variable en 1.
+      Estos pueden colocarse antes o después de la variable, lo que define si se aplica antes o después de evaluar la expresión.
+
+   #### Autoboxing y Unboxing
+   Java permite usar operadores aritméticos con clases envolventes (como `Integer`).
+   La conversión entre tipos primitivos y sus clases envolventes ocurre automáticamente, en un proceso llamado **autoboxing** (primitivo a envolvente) y
+      **unboxing** (envolvente a primitivo).
+
+   ### 2. Operadores de Asignación y Operadores Combinados
+   El operador de asignación (`=`) se utiliza para asignar valores a una variable.
+   Existen operadores de asignación combinados que permiten realizar y asignar una operación en una sola línea:
+      - **+=**: Suma y asigna el resultado.
+      - **-=**: Resta y asigna el resultado.
+      - **/=**: Divide y asigna el resultado.
+      - **%=**: Aplica módulo y asigna el resultado.
+   Por ejemplo, `a += 5;` es equivalente a `a = a + 5;`.
+
+   ### 3. Operadores Incremento y Decremento
+   Estos operadores incrementan o decrementan el valor de una variable en 1.
+   - **Pre-incremento y pre-decremento** (`++a` y `--a`): Primero se modifica el valor y luego se usa en la expresión.
+   - **Post-incremento y post-decremento** (`a++` y `a--`): Primero se usa el valor actual en la expresión y luego se modifica.
+
+   ### 4. Operador Ternario
+   El operador ternario `?:` es una forma abreviada de una expresión `if-else` y permite asignar un valor según una condición. Su estructura es:
+   Por ejemplo:
+      resultado = (condición) ? valor_si_true : valor_si_false;
+      int max = (a > b) ? a : b;
+
+   ### 5. Operadores Relacionales
+   Los operadores relacionales comparan valores numéricos o variables y devuelven un resultado booleano (`true` o `false`):
+      - **==**: Igualdad.
+      - **!=**: Desigualdad.
+      - **>**: Mayor que.
+      - **>=**: Mayor o igual que.
+      - **<**: Menor que.
+      - **<=**: Menor o igual que.
+   Estos operadores se usan en sentencias de control, como `if`, `while`, y `for`.
+
+   ### 6. Operadores Lógicos
+   Los operadores lógicos permiten evaluar expresiones booleanas:
+   - **&& (AND lógico)**: La expresión es `true` si ambas partes son verdaderas.
+   - **|| (OR lógico)**: La expresión es `true` si al menos una de las partes es verdadera.
+   - **! (NOT lógico)**: Niega el valor booleano, convirtiendo `true` en `false` y viceversa.
+
+   #### Comparación de Objetos y Primitivos
+   Los operadores relacionales (`==`, `!=`) comparan valores en tipos primitivos. En objetos, estos operadores comparan
+      referencias (si apuntan al mismo objeto en memoria). Para comparar valores de objetos, se usa el método `.equals()`.
+
+   ### 7. Operadores Bit a Bit
+   Los operadores bit a bit (`&`, `|`, `^`, `~`, `<<`, `>>`, `>>>`) manipulan los bits individuales en tipos numéricos y se usan
+      principalmente en programación de bajo nivel.
+
+   ### 8. Precedencia de Operadores
+   La **precedencia** define el orden en que los operadores se evalúan en una expresión. Desde mayor a menor precedencia:
+      1. **Paréntesis**: `( )`
+      2. **Incremento/Decremento**: `++`, `--` (pre/post)
+      3. **Aritméticos**: `*`, `/`, `%`, `+`, `-`
+      4. **Relacionales**: `>`, `>=`, `<`, `<=`
+      5. **Igualdad/Desigualdad**: `==`, `!=`
+      6. **Lógicos**: `&&`, `||`
+      7. **Asignación**: `=`, `+=`, `-=`, `*=`, `/=`
+   Este orden puede modificarse usando paréntesis para agrupar expresiones y dar prioridad a ciertas operaciones.
+
+
+Espero que esta versión te sea clara y útil para tus notas sobre operadores en Java. ¡Avísame si necesitas que amplíe algún tema!
    5. Flujos de control
    6. Clases Wrapper
    7. Valor v/S referencia
