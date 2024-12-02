@@ -328,8 +328,511 @@ James Gosling: Escribelo 1 vez y ejecutalo donde quieras.
 
 Espero que esta versión te sea clara y útil para tus notas sobre operadores en Java. ¡Avísame si necesitas que amplíe algún tema!
    5. Flujos de control
+
+      #### **1. IF (Toma de decisiones basadas en condiciones booleanas)**
+      - **Funcionamiento:**
+        - Evalúa una expresión booleana entre paréntesis.
+        - Si la condición es `true`, ejecuta un bloque de código.
+        Por ejemplo:
+         int edad = 18;
+         if (edad >= 18) {
+             System.out.println("Eres mayor de edad.");
+         } else {
+             System.out.println("Eres menor de edad.");
+         }
+        - Si es `false`, puede ejecutarse un bloque alternativo usando `else`.
+        Por ejemplo:
+         int nota = 85;
+         if (nota >= 90) {
+             System.out.println("Sobresaliente");
+         } else if (nota >= 70) {
+             System.out.println("Aprobado");
+         } else {
+             System.out.println("Reprobado");
+         }
+
+      - **Buena práctica:**
+         - Siempre usar llaves `{}` para definir los bloques de código, aunque contengan una sola línea. Esto mejora la claridad y evita errores.
+
+      - **Estructura:**
+         - Se pueden encadenar múltiples condiciones usando `else if`.
+         - Se puede añadir un `else` al final como camino alternativo en caso de que ninguna condición se cumpla.
+
+      - **Llaves opcionales:**
+      - Si el bloque contiene una sola línea, las llaves son opcionales, pero no recomendado omitirlas.
+
+      #### **2. SWITCH (Selección por valor)**
+      - **Funcionamiento:**
+        - Evalúa una variable y la compara con varios casos (`case`).
+        - Cuando encuentra coincidencia, ejecuta el bloque asociado.
+        - Útil para decisiones basadas en valores constantes.
+        Por ejemplo:
+         int dia = 3;
+         switch (dia) {
+             case 1:
+                 System.out.println("Lunes");
+                 break;
+             case 2:
+                 System.out.println("Martes");
+                 break;
+             case 3:
+                 System.out.println("Miércoles");
+                 break;
+             default:
+                 System.out.println("Día no válido");
+                 break;
+         }
+
+
+      - **Tipos soportados en la expresión:**
+        - Primitivos: `int`, `byte`, `short`, `char`.
+        - `String` (a partir de JDK 7).
+        - Tipos complejos como `enum`.
+
+      - **Buena práctica:**
+        - Usar la palabra clave `break` para salir del `switch` después de ejecutar un caso y evitar ejecutar casos posteriores (fallthrough).
+        - Se puede incluir un caso `default` para manejar valores no especificados.
+
+      #### **3. Uso de Puntos y Comas (;)**
+      - **Separación de sentencias:**
+         - Cada línea de código termina con un punto y coma `;`.
+         - Útil para encadenar múltiples sentencias en un bucle o una misma línea.
+
+      #### **4. FOR (Bucle de control iterativo)**
+      - **Estructura:**
+         - Tres partes principales:
+            1. **Inicialización:** Define una variable de control (contador).
+            2. **Condición:** Evalúa si el bucle debe continuar.
+            3. **Incremento:** Modifica la variable de control tras cada iteración.
+            Por ejemplo for simple:
+               for (int i = 1; i <= 5; i++) {
+                  System.out.println("Número: " + i);
+               }
+            Por ejemplo for con matrices:
+               for (int i = 0; i < 3; i++) {
+                   for (int j = 0; j < 3; j++) {
+                       System.out.print("(" + i + "," + j + ") ");
+                   }
+                   System.out.println(); // Salto de línea
+               }
+
+      #### **5. Otros conceptos útiles:**
+      - **Comas (,):**
+      - Separan identificadores al declarar múltiples variables.
+      - Separan argumentos o parámetros en métodos.
+
+      - **Puntos (.):**
+      - Usados con objetos para acceder a métodos o atributos.
+      - Separan nombres de paquetes y clases (e.g., `java.util.Scanner`).
+      - Acceden a métodos o atributos estáticos (e.g., `Math.PI`).
+
    6. Clases Wrapper
+   Las clases wrapper en Java son objetos que "envuelven" (wrap) a los tipos de datos primitivos, permitiéndoles ser tratados como objetos. Son útiles para:
+
+   Trabajar con colecciones (List, Set, etc.), ya que estas requieren objetos.
+   Usar métodos de utilidad para conversión y comprobación.
+   Manejar constantes como MIN_VALUE y MAX_VALUE.
+
+   #### **Lista de Clases Wrapper
+      Java proporciona una clase wrapper para cada tipo de dato primitivo:
+      Primitivo	Clase Wrapper
+      byte     	Byte
+      short    	Short
+      int      	Integer
+      long     	Long
+      float    	Float
+      double      Double
+      char     	Character
+      boolean     Boolean
+
+   #### **La Clase Byte
+   Cada tipo numérico tiene su propia clase de objetos.
+   Así, el tipo byte tiene la clase Byte.
+   - **Se implementan varios métodos útiles dentro de la clase envoltorio Byte.
+      Byte b = Byte.valueOf((byte) 127);
+      String s = b.toString();
+      byte primByte = b.byteValue();
+      short sh = b.shortValue();
+      int i = b.intValue();
+      long l = b.longValue();
+      float f = b.floatValue();
+      double d = b.doubleValue();
+      byte parsed = Byte.parseByte("127");
+
+   - **Constantes de Byte
+      Byte.MIN_VALUE
+      Byte.MAX_VALUE
+
+   - **Métodos estáticos
+      String Byte.toString(byte b)
+      byte Byte.parseByte(String s)
+      byte Byte.parseByte(String s, int base)
+      Byte Byte.valueOf(String s)
+      Byte Byte.valueOf(byte b)
+
+   - **Métodos de la instancia
+      byte byteValue()
+      short shortValue()
+      int intValue()
+      long longValue()
+      float floatValue()
+      double doubleValue()
+      String toString()
+      int hashCode()
+      boolean equals(Object obj)
+
+   #### **La Clase Short
+      Cada tipo numérico tiene su propia clase de objetos.
+      Así, el tipo short tiene la clase Short.
+      - **Se implementan varios métodos útiles dentro de la clase envoltorio Short.
+         Short sh = Short.valueOf((short) 32767);
+         String s = sh.toString();
+         short primShort = sh.shortValue();
+         int i = sh.intValue();
+         long l = sh.longValue();
+         float f = sh.floatValue();
+         double d = sh.doubleValue();
+         short parsed = Short.parseShort("32767");
+
+   - **Constantes de Short
+      Short.MIN_VALUE
+      Short.MAX_VALUE
+
+   - **Métodos estáticos
+      String Short.toString(short s)
+      short Short.parseShort(String s)
+      short Short.parseShort(String s, int base)
+      Short Short.valueOf(String s)
+      Short Short.valueOf(short s)
+
+   - **Métodos de la instancia
+      short shortValue()
+      int intValue()
+      long longValue()
+      float floatValue()
+      double doubleValue()
+      String toString()
+      int hashCode()
+      boolean equals(Object obj)
+
+   #### **La Clase Integer
+      Cada tipo numérico tiene su propia clase de objetos.
+      Así, el tipo int tiene la clase Integer.
+      - **Se implementan varios métodos útiles dentro de la clase envoltorio Integer.
+         Integer i = Integer.valueOf(1234567);
+         String s = i.toString();
+         int primInt = i.intValue();
+         long l = i.longValue();
+         float f = i.floatValue();
+         double d = i.doubleValue();
+         int parsed = Integer.parseInt("2147483647");
+
+   - **Constantes de Integer
+      Integer.MIN_VALUE
+      Integer.MAX_VALUE
+
+   - **Métodos estáticos
+      String Integer.toString(int i, int base)
+      String Integer.toString(int i)
+      int Integer.parseInt(String s, int base)
+      int Integer.parseInt(String s)
+      Integer Integer.valueOf(String s, int base)
+      Integer Integer.valueOf(String s)
+
+   - **Métodos de la instancia
+      int intValue()
+      long longValue()
+      float floatValue()
+      double doubleValue()
+      String toString()
+      int hashCode()
+      boolean equals(Object obj)
+      byte byteValue()
+      short shortValue()
+
+   #### **La Clase Long
+      Cada tipo numérico tiene su propia clase de objetos.
+      Así, el tipo long tiene la clase Long.
+      - **Se implementan varios métodos útiles dentro de la clase envoltorio Long.
+         Long l = Long.valueOf(9223372036854775807L);
+         String s = l.toString();
+         long primLong = l.longValue();
+         int i = l.intValue();
+         float f = l.floatValue();
+         double d = l.doubleValue();
+         long parsed = Long.parseLong("9223372036854775807");
+
+   - **Constantes de Long
+      Long.MIN_VALUE
+      Long.MAX_VALUE
+
+   - **Métodos estáticos
+      String Long.toString(long l)
+      long Long.parseLong(String s)
+      long Long.parseLong(String s, int base)
+      Long Long.valueOf(String s)
+      Long Long.valueOf(long l)
+
+   - **Métodos de la instancia
+      long longValue()
+      int intValue()
+      float floatValue()
+      double doubleValue()
+      String toString()
+      int hashCode()
+      boolean equals(Object obj)
+
+
+   #### **La Clase Float
+      Cada tipo numérico tiene su propia clase de objetos.
+      Así, el tipo float tiene la clase Float.
+      - **Se implementan varios métodos útiles dentro de la clase envoltorio Float.
+         Float f = Float.valueOf(3.14f);
+         String s = f.toString();
+         float primFloat = f.floatValue();
+         int i = f.intValue();
+         long l = f.longValue();
+         double d = f.doubleValue();
+         float parsed = Float.parseFloat("3.14");
+
+   - **Constantes de Float
+      Float.MIN_VALUE
+      Float.MAX_VALUE
+      Float.NaN
+      Float.POSITIVE_INFINITY
+      Float.NEGATIVE_INFINITY
+
+   - **Métodos estáticos
+      String Float.toString(float f)
+      float Float.parseFloat(String s)
+      Float Float.valueOf(String s)
+      Float Float.valueOf(float f)
+
+   - **Métodos de la instancia
+      float floatValue()
+      int intValue()
+      long longValue()
+      double doubleValue()
+      String toString()
+      int hashCode()
+      boolean equals(Object obj)
+
+   #### **La Clase Double
+      Cada tipo numérico tiene su propia clase de objetos.
+      Así, el tipo double tiene la clase Double.
+      - **Se implementan varios métodos útiles dentro de la clase envoltorio Double.
+         Double d = Double.valueOf(3.141592653589793);
+         String s = d.toString();
+         double primDouble = d.doubleValue();
+         int i = d.intValue();
+         long l = d.longValue();
+         float f = d.floatValue();
+         double parsed = Double.parseDouble("3.141592653589793");
+
+   - **Constantes de Double
+      Double.MIN_VALUE
+      Double.MAX_VALUE
+      Double.NaN
+      Double.POSITIVE_INFINITY
+      Double.NEGATIVE_INFINITY
+
+   - **Métodos estáticos
+      String Double.toString(double d)
+      double Double.parseDouble(String s)
+      Double Double.valueOf(String s)
+      Double Double.valueOf(double d)
+
+   - **Métodos de la instancia
+      double doubleValue()
+      int intValue()
+      long longValue()
+      float floatValue()
+      String toString()
+      int hashCode()
+      boolean equals(Object obj)
+
+   #### **La Clase Character
+      Cada tipo de carácter tiene su propia clase de objetos.
+      Así, el tipo char tiene la clase Character.
+      - **Se implementan varios métodos útiles dentro de la clase envoltorio Character.
+      Character c = Character.valueOf('A');
+      String s = c.toString();
+      char primChar = c.charValue();
+      boolean isLetter = Character.isLetter(c);
+      boolean isDigit = Character.isDigit(c);
+
+   - **Constantes de Character
+      Character.MIN_VALUE
+      Character.MAX_VALUE
+
+   - **Métodos estáticos
+      boolean Character.isLetter(char c)
+      boolean Character.isDigit(char c)
+      boolean Character.isUpperCase(char c)
+      boolean Character.isLowerCase(char c)
+      boolean Character.isWhitespace(char c)
+      Character toUpperCase(char c)
+      Character toLowerCase(char c)
+      String Character.toString(char c)
+      Character Character.valueOf(char c)
+
+   - **Métodos de la instancia
+      char charValue()
+      String toString()
+      int hashCode()
+      boolean equals(Object obj)
+
+   #### **La Clase Boolean
+      Cada tipo booleano tiene su propia clase de objetos.
+      Así, el tipo boolean tiene la clase Boolean.
+      - **Se implementan varios métodos útiles dentro de la clase envoltorio Boolean.
+         Boolean b = Boolean.valueOf(true);
+         String s = b.toString();
+         boolean primBoolean = b.booleanValue();
+         boolean parsed = Boolean.parseBoolean("true");
+
+   - **Constantes de Boolean
+      Boolean.TRUE
+      Boolean.FALSE
+
+   - **Métodos estáticos
+      String Boolean.toString(boolean b)
+      boolean Boolean.parseBoolean(String s)
+      Boolean Boolean.valueOf(String s)
+      Boolean Boolean.valueOf(boolean b)
+
+   - **Métodos de la instancia
+      boolean booleanValue()
+      String toString()
+      int hashCode()
+      boolean equals(Object obj)
+
    7. Valor v/S referencia
+   En Java, el concepto de "valor" y "referencia" se refiere a cómo se pasan los argumentos a los métodos y cómo se manejan los datos en memoria.
+
+   1. **Por Valor**:
+      Java siempre pasa los **argumentos por valor**, es decir, pasa una copia del valor.
+      - Si el argumento es un tipo **primitivo** (como `int`, `char`, `float`, etc.), se pasa el **valor** del dato.
+      - Si el argumento es un tipo **objeto** (como una instancia de una clase), se pasa la **referencia**
+         (dirección de memoria) al objeto, pero **no** el objeto en sí.
+
+   2. **Por Referencia**:
+      Aunque en Java no se puede pasar por referencia en el sentido clásico como en otros lenguajes como C++ (donde las direcciones
+         de memoria de los objetos pueden ser manipuladas directamente), se simula el paso por referencia al pasar **referencias** de objetos.
+      Sin embargo, es importante recordar que **Java sigue pasando siempre los parámetros por valor**. Lo que cambia es lo que se pasa:
+         el valor de una variable primitiva o la referencia a un objeto.
+
+   ### **Pasar Argumento por Valor**
+      En Java, cuando pasamos un argumento por valor, estamos pasando **una copia** del valor de la variable original.
+      Esto es aplicable cuando se pasan **tipos primitivos** como `int`, `float`, `char`, etc.
+
+      Ejemplo:
+         public class PassByValueExample {
+             public static void main(String[] args) {
+                 int x = 10;
+                 changeValue(x);
+                 System.out.println("Valor de x después del método: " + x); // x sigue siendo 10
+             }
+
+             public static void changeValue(int value) {
+                 value = 20;  // solo cambia la copia local de 'value', no 'x'
+             }
+         }
+
+      **Explicación**:
+      - `x` se pasa por valor al método `changeValue`, lo que significa que la copia de `x` (llamada `value`) es modificada dentro del método.
+      - El valor original de `x` no se ve afectado fuera del método porque el argumento `x` fue copiado, no referenciado.
+
+   ### **Pasar Argumento por Referencia**
+   Cuando pasamos un argumento por **referencia**, se está pasando una referencia al objeto en memoria, no una copia.
+   Esto es relevante solo para los **objetos** (instancias de clases).
+
+   Ejemplo:
+   public class PassByReferenceExample {
+       public static void main(String[] args) {
+           Persona p = new Persona("Rafa");
+           System.out.println("Antes del cambio: " + p.getNombre());
+           changeName(p);
+           System.out.println("Después del cambio: " + p.getNombre()); // El nombre cambia a 'Juan'
+       }
+
+       public static void changeName(Persona persona) {
+           persona.setNombre("Juan");  // Se modifica el objeto original
+       }
+   }
+
+   class Persona {
+       private String nombre;
+
+       public Persona(String nombre) {
+           this.nombre = nombre;
+       }
+
+       public String getNombre() {
+           return nombre;
+       }
+
+       public void setNombre(String nombre) {
+           this.nombre = nombre;
+       }
+   }
+
+   **Explicación**:
+   - En este caso, `p` es un objeto de tipo `Persona` que se pasa al método `changeName` por referencia.
+   - **La referencia** al objeto `p` es pasada al método, lo que significa que cualquier cambio hecho en el objeto
+      dentro del método afecta al objeto original.
+   - Aunque **Java pasa siempre por valor** (la referencia es pasada por valor), al ser un objeto, lo que se pasa es
+      la dirección de memoria, lo que permite modificar los atributos del objeto original.
+
+   ### **Pasar Argumento por Referencia con un Objeto Persona**
+   Como ya te mencioné antes, en Java se puede simular el paso por referencia con objetos.
+      Esto es lo que ocurre cuando se pasa un objeto como argumento.
+   Imagina que tienes una clase `Persona` y deseas cambiar sus atributos dentro de un método. Cuando se pasa el objeto a ese método,
+      estás pasando una **referencia** al objeto en memoria, lo que permite modificar sus campos.
+
+   Ejemplo:
+   public class TestReferencePassing {
+       public static void main(String[] args) {
+           Persona persona = new Persona("Rafa");
+           System.out.println("Antes: " + persona.getNombre()); // Rafa
+           changeName(persona);
+           System.out.println("Después: " + persona.getNombre()); // Juan
+       }
+
+       public static void changeName(Persona p) {
+           p.setNombre("Juan");  // Cambia el valor del nombre de la persona
+       }
+   }
+
+   class Persona {
+       private String nombre;
+
+       public Persona(String nombre) {
+           this.nombre = nombre;
+       }
+
+       public String getNombre() {
+           return nombre;
+       }
+
+       public void setNombre(String nombre) {
+           this.nombre = nombre;
+       }
+   }
+
+   **Explicación**:
+   - Cuando se pasa el objeto `persona` a la función `changeName`, lo que realmente se pasa es la **referencia** al objeto, no una copia.
+   - Por lo tanto, cualquier cambio en el objeto dentro del método afecta directamente al objeto original.
+
+   Aunque es importante recordar que **Java no pasa por referencia en el sentido clásico** (como C++), cuando trabajas con objetos,
+      parece que el paso es por referencia porque los métodos pueden modificar el objeto directamente.
+
+   ### Resumen de Diferencias entre Valor y Referencia en Java
+      - **Por Valor (tipos primitivos)**: Se pasa una copia del valor de la variable. Los cambios dentro del método no afectan el valor original.
+      - **Por Referencia (objetos)**: Se pasa la referencia (dirección en memoria) del objeto. Los cambios realizados dentro
+         del método afectan al objeto original.
+
+
    8. Las clases Date y Calendar
    9. Clase System
    10. La Clase Math
